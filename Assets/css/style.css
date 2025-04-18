@@ -315,3 +315,99 @@ section .list .item .content .information-button:hover {
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
 }
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    header {
+        grid-template-columns: 1fr 400px;
+    }
+
+    header nav ul {
+        grid-template-columns: repeat(3, 120px);
+    }
+
+    section .list .item .content h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    header nav ul {
+        justify-content: center;
+        grid-template-columns: repeat(3, 100px);
+    }
+
+    section .list {
+        width: 90vw;
+    }
+
+    section .list .item .content {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    section .list .item .content-description {
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .arrows {
+        width: 20vw;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        grid-template-columns: repeat(3, 90px);
+    }
+
+    section .list .item .image {
+        width: 70%;
+    }
+
+    section .list .item .content h2 {
+        font-size: 2em;
+    }
+
+    .indicators .number {
+        font-size: 3em;
+    }
+
+    .arrows {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 576px) {
+    header nav ul {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    header img {
+        width: 180px;
+    }
+
+    section .list .item .content h2 {
+        font-size: 1.8em;
+    }
+
+    section .list .item .content-description {
+        font-size: 0.9em;
+    }
+
+    .indicators .number {
+        font-size: 2em;
+    }
+
+    section .list .item .image {
+        width: 80%;
+    }
+}
